@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071a33">
+<meta name="description" content="Shamel ElKhodary — Group Supply Chain & Facilities Director">
+<title>Shamel ElKhodary | Digital Business Card</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f7;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#10213a}
+.card{width:min(560px,100%);margin:auto;background:#fff;min-height:100vh;box-shadow:0 10px 45px rgba(10,30,60,.12)}
+.hero{padding:34px 24px 30px;text-align:center;color:#fff;background:radial-gradient(circle at 50% 0,#183a68,#06182e 65%);border-radius:0 0 30px 30px}
+.photo{width:150px;height:150px;object-fit:cover;border-radius:50%;border:5px solid #fff;display:block;margin:0 auto 20px}
+h1{font-size:36px;margin:0 0 9px;letter-spacing:-1.2px}.title{font-size:18px;color:#3ca4ff;font-weight:700;margin-bottom:22px}.bio{max-width:470px;margin:auto;font-size:15px;line-height:1.6;color:#edf4ff}
+.body{padding:25px 20px 30px}.action{display:flex;align-items:center;gap:16px;width:100%;padding:17px 18px;margin:10px 0;border:1px solid #e2e8f0;border-radius:16px;background:#fff;text-decoration:none;color:#10213a;box-shadow:0 3px 12px rgba(16,33,58,.07)}
+.icon{width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:23px;color:#fff;flex:0 0 46px}.phone,.email,.linkedin{background:#1677e8}.whatsapp{background:#21c76b}.txt{flex:1}.label{font-size:18px;font-weight:750}.value{font-size:14px;color:#66758a;margin-top:3px}.arrow{font-size:28px;color:#1677e8}
+.save{display:block;width:100%;margin-top:16px;padding:18px;border:0;border-radius:16px;background:#061a34;color:#fff;font-size:17px;font-weight:750;cursor:pointer}
+.footer{text-align:center;padding:26px 20px 34px;color:#18304f;font-style:italic;line-height:1.6}.quote{font-size:17px}.mark{font-size:38px;color:#2d9cff;line-height:.5}
+@media(max-width:430px){h1{font-size:30px}.title{font-size:16px}.photo{width:132px;height:132px}}
+</style>
+</head>
+<body>
+<main class="card">
+<section class="hero">
+<img class="photo" src="shamel-photo.jpg" alt="Shamel ElKhodary">
+<h1>Shamel ElKhodary</h1>
+<div class="title">Group Supply Chain &amp; Facilities Director</div>
+<p class="bio">Results-driven Supply Chain &amp; Procurement leader with 27+ years of experience driving transformation, governance, and operational excellence across multiple markets.</p>
+</section>
+<section class="body">
+<a class="action" href="tel:+201001413528"><span class="icon phone">☎</span><span class="txt"><span class="label">Call Me</span><span class="value">+20 100 141 3528</span></span><span class="arrow">›</span></a>
+<a class="action" href="https://wa.me/201001413528" target="_blank" rel="noopener"><span class="icon whatsapp">◔</span><span class="txt"><span class="label">WhatsApp Me</span><span class="value">+20 100 141 3528</span></span><span class="arrow" style="color:#21c76b">›</span></a>
+<a class="action" href="mailto:shamelkh@hotmail.com"><span class="icon email">✉</span><span class="txt"><span class="label">Email Me</span><span class="value">shamelkh@hotmail.com</span></span><span class="arrow">›</span></a>
+<a class="action" href="https://eg.linkedin.com/in/shamel-elkhodary" target="_blank" rel="noopener"><span class="icon linkedin">in</span><span class="txt"><span class="label">Connect on LinkedIn</span><span class="value">linkedin.com/in/shamel-elkhodary</span></span><span class="arrow">›</span></a>
+<button class="save" onclick="downloadVCard()">Save Contact</button>
+</section>
+<footer class="footer"><div class="mark">“</div><div class="quote">Building resilient supply chains.<br>Creating sustainable value.</div></footer>
+</main>
+<script>
+function downloadVCard(){
+  const a=document.createElement('a');
+  a.href='Shamel-ElKhodary.vcf';
+  a.download='Shamel-ElKhodary.vcf';
+  document.body.appendChild(a); a.click(); a.remove();
+}
+</script>
+</body>
+</html>
